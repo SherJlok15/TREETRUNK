@@ -1,0 +1,45 @@
+.faq-block {
+	padding: 65px 107px;
+
+	&__title {
+		@extend %title;
+		padding-bottom: 36px;
+	}
+
+
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 40px;
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		font-family: 'Lato-Reg';
+		& button {
+			@extend %border-none-button;
+			margin-bottom: 20px;
+			font-size: $normal-font;
+			line-height: 24px;
+			letter-spacing: -0.02em;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	&__info {
+		@extend %text;
+		max-width: 408px;
+		width: 100%;
+	}
+
+	&__full-faq-button {
+		@extend %border-none-button;
+		font-size: $normal-font;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+	}
+}

@@ -1,0 +1,100 @@
+// buttons
+%light-button {
+	background-color: $color-white;
+	color: $color-blue;
+	border: 2px solid rgba(0, 133, 255, .25);
+	border-radius: 100px;
+	transition: all 1s;
+	outline: none;
+	&:hover {
+		cursor: pointer;
+		background-color: $color-blue;
+		color: $color-white;
+	}
+}
+
+%dark-button {
+	background-color: $color-blue;
+	color: $color-white;
+	border: 2px solid $color-blue;
+	border-radius: 100px;
+	transition: all 1s;
+	outline: none;
+	&:hover {
+		cursor: pointer;
+		background-color: $color-white;
+		color: $color-blue;
+	}
+}
+
+%darkest-button {
+	border-radius: 4px;
+	background-color: $color-black-dark;
+	color: $color-white;
+	outline: none;
+	border: none;
+	transition: 1s all;
+	&:hover {
+		color: $color-white;
+		cursor: pointer;
+	}
+}
+
+%border-none-button {
+	background-color: $color-white;
+	color: $color-blue;
+	border: none;
+	outline: none;
+	border-radius: 100px;
+	transition: all 1s;
+	padding: 5px 10px;
+	&:hover {
+		cursor: pointer;
+		background-color: $color-blue;
+		color: $color-white;
+	}
+}
+
+// title
+
+%title {
+	font-family: 'Montserrat-Bold';
+	font-size: $large-font;
+	line-height: 59px;
+	letter-spacing: -0.04em;
+	color: $color-black;
+}
+
+// text
+
+%text {
+	font-family: 'Lato-Reg';
+	font-size: $normal-font;
+	line-height: 32px;
+	letter-spacing: -0.02em;
+	color: $color-black;
+	opacity: 50%;
+}
+
+// input type text
+
+%text-input {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid $color-dark-grey-plus;
+	transition: 1s all;
+	&:focus {
+	border-bottom: 2px solid $color-blue;
+
+	}
+}
+
+// input type checkbox
+
+%checkbox-input {
+	background-color: $color-blue;
+	color: $color-white;
+	&:hover {
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,69 @@
+.header {
+	background-color: $color-grey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 36px;
+	box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.03);
+
+	&__burger-logo-block {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		font-family: 'Montserrat-Bold';
+		font-size: $middle-font;
+		line-height: 29px;
+		letter-spacing: 0.16em;
+		color: $color-black;
+		opacity: 0.33;
+		padding-left: 32px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__burger {
+		span {
+			display: block;
+			width: 32px;
+			height: 4px;
+			background-color: $color-blue;
+			margin-bottom: 6px;
+			border-radius: 2px;
+			&:last-child{
+				margin: 0;
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__auth-buttons-block {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		& button {
+			font-family: 'Lato-Bold';
+			padding: 9px 0;
+			font-size: $little-font;
+			letter-spacing: -0.02em;
+			line-height: 19px;
+			max-width: 120px;
+			width: 100%;
+		}
+	}
+
+	&__signin-button {
+		margin-right: 8px;
+		@extend	%light-button;
+	}
+
+	&__signup-button{
+		@extend %dark-button;
+	}
+}

@@ -1,0 +1,47 @@
+.intro-block {
+	display: flex;
+	flex-direction: column;
+	padding: 168px 0 220px;
+	&__pre-title {
+		font-family: 'Lato-Reg';
+		font-size: $big-font;
+		font-weight: 500;
+		line-height: 38px;
+		letter-spacing: -0.04em;
+		color: $color-black;
+		opacity: 50%;
+	}
+
+	&__title {
+		@extend %title;
+	}
+
+	&__text {
+		max-width: 85%;
+		@extend %text;
+		margin-bottom: 64px;
+	}
+
+	&__buttons-block {
+		& button {
+			font-family: 'Lato-Bold';
+			font-size: $normal-plus-font;
+			line-height: 24px;
+			letter-spacing: -0.02em;
+			padding: 18px 0;
+			max-width: 288px;
+			width: 100%;
+			&:first-child {
+				margin-right: 24px;
+			}
+		}
+	}
+
+	&__explore-button {
+		@extend %dark-button;
+	}
+
+	&__create-button {
+		@extend	%light-button;
+	}
+}

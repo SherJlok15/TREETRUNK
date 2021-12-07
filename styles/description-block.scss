@@ -1,0 +1,28 @@
+.description-block {
+	padding: 112px 71px;
+	&__title {
+		@extend %title;
+		padding-bottom: 26px;
+	}
+
+	&__text-first {
+		@extend %text;
+		padding-bottom: 30px;
+		max-width: 85%;
+	}
+
+	&__text-second {
+		max-width: 87%;
+		@extend %text;
+		padding-bottom: 100px;
+	}
+
+	&__reading-button {
+		@extend %border-none-button;
+		background-color: $color-dark-grey;
+		font-family: 'Lato-Reg';
+		line-height: 24px;
+		letter-spacing: -0.02em;
+		font-size: $normal-font;
+	}
+}

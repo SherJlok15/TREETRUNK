@@ -1,0 +1,70 @@
+@import "intro-block";
+@import "description-block";
+@import "faq-block";
+@import "ask-question-block";
+
+
+.main {
+
+	&__intro-block {
+		position: relative;
+	}
+	
+	&__bd-intro-block-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 85%;
+		width: 33%;
+		background-color: rgba(248, 248, 248, 1);
+		z-index: -3;
+	}
+
+	&__bd-intro-block-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 70%;
+		width: 12%;
+		background-color: rgba(243, 243, 243, 1);
+		z-index: -2;
+	}
+
+	&__bd-intro-block-3 {
+		position: absolute;
+		bottom: 0;
+		left: 5%;
+		height: 25%;
+		width: 12%;
+		background-color: rgba(237, 237, 237, 1);
+		z-index: -1;
+	}
+
+	&__bd-intro-block-4 {
+		position: absolute;
+		bottom: 0;
+		right: 10%;
+		height: 60%;
+		width: 20%;
+		background-color: rgba(248, 248, 248, 1);
+		z-index: -2;
+	}
+
+	&__bd-intro-block-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 45%;
+		width: 18%;
+		background-color: rgba(242, 242, 242, 1);
+		z-index: -2;
+	}
+
+	&__description-block {
+		background-color: $color-dark-grey;
+	}
+
+	&__ask-question-block {
+		background-color: $color-dark-grey;
+	}
+}
